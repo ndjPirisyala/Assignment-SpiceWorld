@@ -1,0 +1,12 @@
+.card-columns {
+  column-count: 1;
+  column-gap: 0px;
+}
+
+.card-title{
+  font-family: "Comic Sans MS";
+}
+
+.card-body{
+background: antiquewhite;
+}
