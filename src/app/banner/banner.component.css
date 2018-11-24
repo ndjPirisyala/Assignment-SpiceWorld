@@ -1,12 +1,7 @@
-.card-columns {
-  column-count: 1;
-  column-gap: 0px;
-}
-
-.card-title{
-  font-family: "Comic Sans MS";
-}
-
-.card-body{
-background: antiquewhite;
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
