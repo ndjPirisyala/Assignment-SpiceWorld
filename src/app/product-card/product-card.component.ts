@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-product-card',
@@ -6,24 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnInit {
-  cards = [
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg'},
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg'},
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg'},
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
-    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' }
-  ];
-  constructor() { }
+  cards: Observable<any[]>;
+  constructor(db: AngularFirestore) {
+    this.cards = db.collection('products').valueChanges();
+}
 
   ngOnInit() {
   }
