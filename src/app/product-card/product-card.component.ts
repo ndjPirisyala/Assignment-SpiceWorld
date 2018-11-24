@@ -11,6 +11,16 @@ export class ProductCardComponent implements OnInit {
     { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
     { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
     { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg'},
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg'},
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
+    { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' },
     { title: 'Pepper', cols: 1, rows: 1, LINK: 'https://www.spiceography.com/wp-content/uploads/2017/11/tellicherry-pepper.jpeg' }
   ];
   constructor() { }

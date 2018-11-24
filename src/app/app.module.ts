@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { BannerComponent } from './banner/banner.component';
 import { PromotionCardComponent } from './promotion-card/promotion-card.component';
+import { AdminComponent } from './admin/admin.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PromotionCardComponent } from './promotion-card/promotion-card.componen
     LoginComponent,
     HomeComponentComponent,
     BannerComponent,
-    PromotionCardComponent
+    PromotionCardComponent,
+    AdminComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
